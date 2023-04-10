@@ -1,0 +1,153 @@
+/* project  fonts */
+@import url('./assets/css/fontiran.css');
+/* project  variables */
+@import url('./assets/css/variables.css');
+
+/* css reset */
+* {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IRANSans' , IRANSans !important;
+}
+html,body {
+    scrollbar-width: thin;
+}
+html::-webkit-scrollbar,
+.vs__dropdown-menu::-webkit-scrollbar {
+    width: 9px;
+    background: var(--white-100);
+}
+html::-webkit-scrollbar-thumb,
+.vs__dropdown-menu::-webkit-scrollbar-thumb {
+    background: var(--white-200);
+}
+.disable-select {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+       supported by Chrome and Opera */
+}
+body{
+  background: var(--main-color);
+  overflow-x: hidden;
+}
+body .wheelContainer{
+    min-height: 100vh;
+}
+#wheelOfFortune {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 8px solid var(--second-color2);
+  outline: 12px solid var(--second-color);
+  transform: translateY(-25px);
+}
+#wheel {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+#spin {
+  font: 1.5rem/0 sans-serif;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  height: 25%;
+  transform: translate(-50%,-50%);
+  background: var(--white-color);
+  color: var(--white-color);
+  box-shadow: 0 0 0 8px currentColor, 0 0px 15px 5px var(--black-800);
+  border-radius: 50%;
+  transition: 0.8s;
+  font-size: 17px;
+  font-weight: bold;
+}
+#spin::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  border: 25px solid transparent;
+  border-bottom-color: currentColor;
+  border-top: none;
+}
+.img-city{
+  position: absolute;
+  right: 0;
+  left: 0px;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+.img-city img{
+  transform: translateY(-50px);
+  width: 130%;
+}
+@media screen and (max-width: 1000px) {
+  .img-city img{
+    transform: translateY(-50px) translateX(300px);
+    width: 400%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .img-city img{
+    transform: translateY(-50px) translateX(400px);
+    width: 500%;
+  }
+}
+.img-city-bg{
+  position: absolute;
+  height: 50px;
+  right: 0;
+  left: 0px;
+  width: 100%;
+  bottom: 0;
+  background: var(--black-160);
+}
+.head-wheel svg{
+  width: 60px;
+  cursor: pointer;
+  fill: var(--third-color);
+}
+#alert-box{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: var(--black-800);
+}
+#alert-box .show-alert{
+  background: var(--green-color2);
+  border-radius: 20px;
+  border: 5px solid var(--white-500);
+  font-weight: bold;
+}
+#alert-box  .alert-container{
+  position: relative;
+}
+#alert-box  .alert-container svg{
+  position: absolute;
+  width: 40px;
+  fill: var(--red-color);
+  cursor: pointer;
+  top: 30px;
+  left: 30px;
+}

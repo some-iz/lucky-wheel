@@ -1,0 +1,29 @@
+:root{
+    --main-color: #D3E4F7;
+    --second-color: #283F85;
+    --second-color2: #677CC0;
+    --third-color: #A60E1A;
+
+    --green-color: rgba(125, 207, 182, 1);
+    --green-color2: #9bf6db;
+
+    --red-color: rgba(232, 72, 85, 1);
+
+    --white-color: #fff;
+    --white-100: rgba(255, 255, 255,.1);
+    --white-200: rgba(255, 255, 255,.2);
+    --white-300: rgba(255, 255, 255,.3);
+    --white-500: rgba(255, 255, 255,.5);
+    --white-900: rgba(255, 255, 255,.9);
+    --white-950: rgba(255, 255, 255,.95);
+
+    --black-color: #000;
+    --black-100: rgba(0, 0, 0,.1);
+    --black-160: rgba(0, 0, 0,.16);
+
+    --black-200: rgba(0, 0, 0,.2);
+    --black-400: rgba(0, 0, 0,.4);
+    --black-500: rgba(0, 0, 0,.5);
+    --black-700: rgba(0, 0, 0,.7);
+    --black-800: rgba(0, 0, 0,.8);
+}
